@@ -1,3 +1,5 @@
+/* TODO: Make elements load/show after scrolling down, then hide/fade away as scroll up */
+
 * {
   margin: 0;
   padding: 0;
@@ -33,6 +35,7 @@
   color: rgb(1, 131, 1);
 }
 
+/* TODO: link animations */
 .link {
   /* clamp(min-value, preferred-value, max-value) */
   font-size: clamp(1rem, 1rem + 3vw, 4.5rem);
