@@ -30,6 +30,10 @@
   text-align: center;
 }
 
+.green-text {
+  color: rgb(1, 131, 1);
+}
+
 .link {
   /* clamp(min-value, preferred-value, max-value) */
   font-size: clamp(2rem, 1rem + 3vw, 4.5rem);
@@ -46,6 +50,7 @@
   object-fit: cover;
   object-position: center;
   padding: 0px;
+  margin: -5px 0px;
 }
 
 #main-section {
@@ -55,9 +60,21 @@
 .section-title {
   text-align: center;
   font-size: clamp(2.5rem, 1rem + 2vw, 4rem);
+  margin: 20px;
 }
 
 .section-text {
   padding: 15px;
   font-size: clamp(1.5rem, 1rem + 2vw, 4rem);
+}
+
+.section-text-small {
+  padding: 30px;
+  font-size: clamp(0.5rem, 1rem + 1vw, 2rem);
+  font-style: italic;
+}
+
+.card {
+  width: 100vw;
+  height: 450px;
 }
