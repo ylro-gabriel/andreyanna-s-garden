@@ -5,6 +5,12 @@
   scroll-behavior: smooth;
   /* delete later */
   border: 1px solid;
+  font-family: "Inter", sans-serif;
+  font-variation-settings:
+    "slnt" 0,
+    "wdth" 100,
+    "GRAD" 0,
+    "ROND" 0;
 }
 
 #nav-bar {
@@ -27,12 +33,31 @@
 .link {
   /* clamp(min-value, preferred-value, max-value) */
   font-size: clamp(2rem, 1rem + 3vw, 4.5rem);
+  text-decoration: none;
+}
+
+.link:link {
+  color: rgb(38, 36, 36);
 }
 
 .rectangle-pic {
   height: 300px;
-  width: 100%;
+  width: 100vw;
   object-fit: cover;
   object-position: center;
-  padding: 10px;
+  padding: 0px;
+}
+
+#main-section {
+  overflow-x: hidden;
+}
+
+.section-title {
+  text-align: center;
+  font-size: clamp(2.5rem, 1rem + 2vw, 4rem);
+}
+
+.section-text {
+  padding: 15px;
+  font-size: clamp(1.5rem, 1rem + 2vw, 4rem);
 }
