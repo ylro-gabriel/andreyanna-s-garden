@@ -4,7 +4,7 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
   /* delete later */
-  border: 1px solid;
+  /* border: 1px solid; */
   font-family: "Inter", sans-serif;
   font-variation-settings:
     "slnt" 0,
@@ -18,9 +18,8 @@
   height: 100px;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-evenly;
   gap: 7px;
-  padding-right: 10px;
 }
 
 #main-title {
@@ -36,12 +35,34 @@
 
 .link {
   /* clamp(min-value, preferred-value, max-value) */
-  font-size: clamp(2rem, 1rem + 3vw, 4.5rem);
+  font-size: clamp(1rem, 1rem + 3vw, 4.5rem);
   text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
 }
 
 .link:link {
   color: rgb(38, 36, 36);
+}
+
+.link:hover {
+  background-color: rgb(224, 151, 14);
+  border: solid rgb(224, 151, 14);
+  color: rgb(38, 36, 36);
+  border-radius: 5px;
+}
+
+.link:active {
+  background-color: orangered;
+  border: orangered solid;
+}
+
+link:focus {
+  background-color: rgb(1, 131, 1);
+  border: rgb(1, 131, 1) solid;
 }
 
 .rectangle-pic {
@@ -60,7 +81,7 @@
 .section-title {
   text-align: center;
   font-size: clamp(2.5rem, 1rem + 2vw, 4rem);
-  margin: 20px;
+  margin: 20px 40px;
 }
 
 .section-text {
@@ -77,4 +98,53 @@
 .card {
   width: 100vw;
   height: 450px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 100px;
+}
+
+.card-title {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(228, 246, 227);
+}
+
+.card-image {
+  height: 450px;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.view-details {
+  padding: 10px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  background-color: rgb(1, 131, 1);
+  border: solid rgb(1, 131, 1);
+  color: aliceblue;
+  font-size: 17px;
+}
+
+.view-details:hover {
+  background-color: rgb(224, 151, 14);
+  border: solid rgb(224, 151, 14);
+  color: rgb(38, 36, 36);
+}
+
+.view-details:active {
+  background-color: orangered;
+  border: orangered solid;
+}
+
+#book-now {
+  height: 950px;
+  width: 100%;
 }
