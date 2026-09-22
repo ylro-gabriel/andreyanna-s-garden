@@ -147,7 +147,83 @@ link:focus {
   border: orangered solid;
 }
 
-#book-now {
-  height: 950px;
+.availability {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 900px;
+  width: 100%;
+  background-image: url(https://images.unsplash.com/photo-1561848355-890d054dc55a?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  margin-top: -100px;
+}
+
+#calendar {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+  height: 350px;
+  width: 380px;
+  border-radius: 25px;
+  background-color: rgb(228, 246, 227);
+}
+
+.days {
+  display: grid;
+  width: 350px;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.dates {
+  display: grid;
+  width: 350px;
+  grid-template-columns: repeat(7, 1fr);
+
+  row-gap: 10px;
+}
+
+.dates div {
+  background-color: rgb(215, 254, 157);
+  padding: 5px;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dates div:empty {
+  background-color: rgb(228, 246, 227);
+}
+.dates div:hover {
+  background-color: rgb(141, 193, 64);
+  color: rgb(224, 246, 190);
+}
+
+.dates div:empty:hover {
+  background: none;
+}
+
+.month-title {
+  font-size: 25px;
+}
+
+.availability > h2 {
+  margin-bottom: 40px;
+}
+
+.book-btn {
+  margin-top: 30px;
+  height: 50px;
+  width: 200px;
+  padding: 30px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
 }
